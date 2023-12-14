@@ -290,7 +290,7 @@ void ServiceMain(int argc, char **argv)
     ServiceStatus.dwWin32ExitCode = 0;
     ServiceStatus.dwServiceSpecificExitCode = 0;
     ServiceStatus.dwCheckPoint = 0;
-    ServiceStatus.dwWaitHint = 0;
+    ServiceStatus.dwWaitHint =  0;
 
     hStatus = RegisterServiceCtrlHandlerA("KuzuService", (LPHANDLER_FUNCTION)ControlHandler);
 
